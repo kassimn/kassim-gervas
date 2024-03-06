@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kassim form</title>
+<style>
+
+/* Basic CSS styling for the form */
+body {
+background-color: rgb(88, 108, 9);
+
+
+}
+form {
+  margin: 20px auto;
+  width: 400px;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #ed1d1d;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #106368;
+  color: rgb(237, 242, 250);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #e9770c;
+}
+
+</style>
+</head>
+<body>
+
+<h2>CONTACT US</h2>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+  <label for="e-mail">E-mail</label>
+  <input type="text" id="email" name="email" placeholder="Your email.." required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
